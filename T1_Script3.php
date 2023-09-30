@@ -1,4 +1,5 @@
 <?php
+    // calculating sum of two variables.
     $num1 = 20;
     $num2 = 10;
     $ans = $num1 + $num2;
