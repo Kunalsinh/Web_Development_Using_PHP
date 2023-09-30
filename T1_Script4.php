@@ -1,4 +1,5 @@
 <?php
+    // concatinating two words using echo statement.
     $word1 = "Hello";
     $word2 = "PHP";
 
