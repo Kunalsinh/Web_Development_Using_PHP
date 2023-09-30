@@ -1,5 +1,5 @@
 <?php
-
+    // Getting given number is Odd or Even using if()...else Statement.
     $num1 = 11;
 
     if($num1 % 2 == 0){
