@@ -1,4 +1,5 @@
 <?php
+    // Display name and age using echo.
     $name = "Kunalsinh";
     $age  = 21;
 
