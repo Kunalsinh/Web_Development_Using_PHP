@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<!-- custom css -->
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: sans-serif;
+    }
+
+    #sidebar {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: larger;
+        padding: 1.25rem;
+        background-color: black;
+        color: gray;
+    }
+
+    #sidebar ul {
+        list-style: none;
+        padding: .5rem;
+
+    }
+
+    #sidebar li {
+        margin-bottom: 1rem;
+        padding-top: 1.65rem;
+    }
+
+    #sidebar li a {
+        text-decoration: none;
+        color: rgb(65, 65, 199);
+    }
+
+    #sidebar .list-group-item {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+
+    #sidebar .list-group-item :hover {
+        color: cyan;
+    }
+
+    .section-title {
+        background: linear-gradient(135deg, rgb(16, 16, 51), #000000);
+        /* background: linear-gradient(135deg, rgb(7, 7, 22), #000000); */
+        color: gray;
+        text-align: center;
+        padding: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .dashboard-item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgb(31, 38, 138);
+        font-family: 'Arial', sans-serif;
+    }
+
+    footer {
+        background: linear-gradient(135deg, rgb(16, 16, 51), #000000);
+        color: gray;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        padding: 2.65rem;
+    }
+
+    .gradient-button {
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /*Button Task 1 */
+    .ocean-black-button {
+        background: linear-gradient(80deg, #31a7ff, #02090d);
+        color: #fff;
+    }
+
+    /*Button Task 2 */
+    .orange-black-button {
+        background: linear-gradient(80deg, #ff9831, #02090d);
+        color: #fff;
+    }
+
+    /*Button Task 3 */
+    .cyan-black-button {
+        background: linear-gradient(80deg, #31fcff, #02090d);
+        color: #fff;
+    }
+
+    /*Button Task 4 */
+    .yellow-black-button {
+        background: linear-gradient(80deg, #fffc31, #02090d);
+        color: #fff;
+    }
+
+    /*Button Basic Exercise */
+    .red-black-button {
+        background: linear-gradient(80deg, #ff3131, #02090d);
+        color: #fff;
+    }
+
+    /*Button Array Exercise */
+    .blue-black-button {
+        background: linear-gradient(80deg, rgb(34, 3, 189), #02090d);
+        color: #fff;
+    }
+</style>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar / Navigation -->
+            <nav id="sidebar" class="col-md-3">
+                <h3>Menubar</h3>
+
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">About Me</a></li>
+                    <li class="list-group-item"><a href="#">My Skillset</a></li>
+                    <li class="list-group-item"><a href="#">Assignments</a></li>
+                </ul>
+                <h3>Social Media</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li class="list-group-item"><a href="https://in.linkedin.com/" target="_blank">LinkedIn</a></li>
+                    <li class="list-group-item"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                </ul>
+            </nav>
+            <!-- Main Content -->
+
+            <main class="col-md-9">
+                <div id="header">
+                    <div class="container">
+                        <div class="row section-title">
+                            <!-- here i gave primary color later i have to change it to the theme color  -->
+                            <div class="col-md-6">
+                                <h1 name="data-title-name">Kunalsinh Solanki</h1>
+                                <h4>Software Engineer</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="copyLogo.png" alt="LOGO" width="100" class="float-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="dashboard-item">
+                        <div id="about-me" class="section-title">
+                            <h2>About Me</h2>
+                        </div>
+                        <p name="data-aboutme" class="mt-2">
+                            Hello I am Kunalsinh A. Solanki and my profession is Software Engineer.
+                            I completed my Bachelor's Degree from Atmiya Univeristy on 2023.
+                            Also from there i am pursuing my Master's degree as well.
+                        </p>
+
+                        <p>
+                            Currently i am working to become full stack web developer.
+                            That's why i am studying HTML, CSS, BOOTSTRAP, JAVASCRIPT , TYPESCRIPT for frontend.
+                            For the database part i am studying MySQL , NOSQL as well as MongoDB database for getting
+                            proper knowledge of industrial standards for the databases.
+                            On the other hand for back end part PHP, Laravel also getting knowledge of GitHub to work
+                            smartly.
+                        </p>
+                    </div>
+                    <div class="dashboard-item">
+                        <div id="my-skillset" class="section-title">
+                            <h2>My Skillset</h2>
+                        </div>
+
+                        <form>
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>Front End Language</th>
+                                    <th>Back End Language</th>
+                                </tr>
+                                
+                                <!-- <td>HTML</td>
+                                <td>CSS</td>
+                                <td>BOOTSTRAP</td>
+                                <td>JAVASCRIPT</td>
+                                <td>TYPESCRIPT</td>
+                                <td>C LANGUAGE</td>
+                                <td>PHP</td>
+                                <td>JAVA</td>
+                                <td>ASP.NET</td>
+                                <td>C#.NET</td>
+                                 -->
+                            </table>
+                        </form>
+
+                        <p name="data-skillset"></p>
+                    </div>
+                    <div class="dashboard-item">
+                        <div id="assignments" class="section-title">
+                            <h2>Assignment</h2>
+                        </div>
+                        <div class="btn-group">
+                            <button class="gradient-button ocean-black-button">Task 1</button>
+                            <button class="gradient-button orange-black-button">Task 2</button>
+                            <button class="gradient-button cyan-black-button">Task 3</button>
+                            <button class="gradient-button yellow-black-button">Task 4</button>
+                            <button class="gradient-button blue-black-button">Basic Exercise</button>
+                            <button class="gradient-button red-black-button">Array Exercise</button>
+
+                        </div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div id="my-projects" class="section-title">
+                            <h2>My Projects</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Footer part -->
+    <div>
+        <footer>
+
+            <p>copyright @Kunalsinh A. Solanki KAS PVT LTD 2023</p>
+
+        </footer>
+    </div>
+</body>
+
+</html>
